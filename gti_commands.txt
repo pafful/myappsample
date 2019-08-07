@@ -1,0 +1,147 @@
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ touch index.html
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ touch app.js
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git init
+Initialized empty Git repository in C:/Users/MONTERO/Desktop/git/.git/
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git config --global user.name 'Paulina'
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git config --global user.email 'afful.paulina@gmail.com'
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git add index.html
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git add index.html
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git add *.html
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ ^C
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ $ git rm --cached index.html
+bash: $: command not found
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git add .
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git commit
+[master (root-commit) f7d826e] Initial Commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git add .
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$ git commit -m 'changed app.js'
+[master 24dfb51] changed app.js
+ 1 file changed, 1 insertion(+)
+
+MONTERO@LAPTOP-MATD48BS MINGW64 ~/Desktop/git (master)
+$
